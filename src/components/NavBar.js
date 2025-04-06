@@ -14,8 +14,9 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="ml-auto my-2 my-lg-0" text-left navbarScroll>
+          <Nav className="ml-auto my-2 my-lg-0" navbarScroll>
             <NavLink
+              exact
               to="/"
               className={styles.NavLink}
               activeClassName={styles.active}
@@ -23,6 +24,7 @@ function NavBar() {
               <i class="fa-solid fa-house"></i> Home
             </NavLink>
             <NavLink
+              exact
               to="/Login"
               className={styles.NavLink}
               activeClassName={styles.active}
@@ -30,6 +32,7 @@ function NavBar() {
               <i class="fa-solid fa-right-to-bracket"></i> Login
             </NavLink>
             <NavLink
+              exact
               to="/Register"
               className={styles.NavLink}
               activeClassName={styles.active}
@@ -37,6 +40,7 @@ function NavBar() {
               <i class="fa-solid fa-registered"></i> Register
             </NavLink>
             <NavLink
+              exact
               to="/profile"
               className={styles.NavLink}
               activeClassName={styles.active}
