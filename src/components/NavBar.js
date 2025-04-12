@@ -2,8 +2,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import logo from "../assets/logo.ico"; // Assuming logo exists in this path
-import styles from "../styles/NavBar.module.css"; // Adjust if necessary
+import logo from "../assets/logo.ico";
+import styles from "../styles/NavBar.module.css";
 
 function NavBar() {
   return (
@@ -68,37 +68,35 @@ function NavBar() {
               id="navbarScrollingDropdown"
               className={styles.NavDropdown}
             >
-              <NavDropdown.Item
-                as={NavLink}
-                to="/createtask"
-                className={styles.NavLink}
-                activeClassName={styles.active}
-              >
-                <i class="fa-solid fa-folder-plus"></i> Create Task
+              <NavDropdown.Item>
+                <NavLink
+                  exact
+                  to="/CreateTaskForm"
+                  className={styles.NavLink}
+                  activeClassName={styles.active}
+                >
+                  <i class="fa-solid fa-file-pen"></i> Create Task
+                </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item
-                as={NavLink}
-                to="/EditTask"
-                className={styles.NavLink}
-                activeClassName={styles.active}
-              >
-                <i class="fa-solid fa-file-pen"></i> Edit Task
+              <NavDropdown.Item>
+                <NavLink
+                  exact
+                  to="/EditTaskForm"
+                  className={styles.NavLink}
+                  activeClassName={styles.active}
+                >
+                  <i class="fa-solid fa-file-pen"></i> Edit Task
+                </NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item
-                as={NavLink}
-                to="/tasklist"
-                className={styles.NavLink}
-                activeClassName={styles.active}
-              >
-                <i className="fa-solid fa-list-check"></i> Task List
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={NavLink}
-                to="/taskdetail"
-                className={styles.NavLink}
-                activeClassName={styles.active}
-              >
-                <i className="fa-solid fa-circle-info"></i> Task Detail
+              <NavDropdown.Item>
+                <NavLink
+                  exact
+                  to="/tasklist"
+                  className={styles.NavLink}
+                  activeClassName={styles.active}
+                >
+                  <i className="fa-solid fa-list-check"></i> Task List
+                </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
