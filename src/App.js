@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Im
 import Login from "./components/Login";
 import Settings from "./components/Settings";
 import Register from "./components/Register";
-import Home from "./components/Home"; // Import the CalendarView
+import Home from "./components/ClendarView"; // Import the CalendarView
 import Profile from "./components/Profile"; // Import the Profile component
 import CreateTask from "./components/CreateTask"; // Import the CreateTask component
 import EditTask from "./components/EditTask"; // Import the EditTask component
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<CalendarView />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/profile" element={<Profile />} />
