@@ -8,28 +8,29 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Im
 import Login from "./components/Login";
 import Settings from "./components/Settings";
 import Register from "./components/Register";
-import Home from "./components/ClendarView"; // Import the CalendarView
+import Home from "./components/CalendarView"; // Import the CalendarView
 import Profile from "./components/Profile"; // Import the Profile component
 import CreateTask from "./components/CreateTask"; // Import the CreateTask component
 import EditTask from "./components/EditTask"; // Import the EditTask component
 import TaskList from "./components/TaskList"; // Import the TaskList component
+import CalendarView from "./components/CalendarView";
 
 function App() {
-  console.log("App Component Rendered");
   return (
     <div className="App">
       <NavBar />
-      <Routes>
-        <Route exact path="/" element={<CalendarView />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
-        <Route exact path="/profile" element={<Profile />} />
-        <Route exact path="/settings" element={<Settings />} />
-        <Route path="/createtask" element={<CreateTask />} />
-        <Route path="/edittask" element={<EditTask />} />
-        <Route exact path="/tasklist" element={<TaskList />} />
-        <Route path="*" element={<p>Page not found!</p>} />
-      </Routes>
+      <Container className={styles.container}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/createtask" element={<CreateTask />} />
+          <Route path="/edittask" element={<EditTask />} />
+          <Route path="/tasklist" element={<TaskList />} />
+        </Routes>
+      </Container>
     </div>
   );
 }

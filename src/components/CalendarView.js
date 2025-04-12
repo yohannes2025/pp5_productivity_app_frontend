@@ -1,4 +1,4 @@
-// Home.js
+// CalendarView.js
 import React, { useState, useEffect } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
@@ -55,7 +55,8 @@ const CalendarView = () => {
               view={view}
               onView={handleViewChange}
               onEventClick={handleEventClick}
-              style={{ height: "100%" }} // Ensures full height within the parent div
+              style={{ height: "100%" }} // Ensures the calendar takes full height of the container
+              selectable={true}
             />
           </div>
         </Col>
