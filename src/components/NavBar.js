@@ -71,7 +71,7 @@ function NavBar() {
               <NavDropdown.Item>
                 <NavLink
                   exact
-                  to="/CreateTaskForm"
+                  to="/CreateTask"
                   className={styles.NavLink}
                   activeClassName={styles.active}
                 >
@@ -81,7 +81,7 @@ function NavBar() {
               <NavDropdown.Item>
                 <NavLink
                   exact
-                  to="/EditTaskForm"
+                  to="/EditTask"
                   className={styles.NavLink}
                   activeClassName={styles.active}
                 >
