@@ -45,21 +45,8 @@ const TaskList = () => {
         backgroundColor: "#f8f9fa",
       }}
     >
-      {/* <Navbar bg="light" expand="lg" className="mb-4 w-100">
-        <Container>
-          <Navbar.Brand>Task Manager</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/calendar">Calendar</Nav.Link>
-            <Nav.Link href="/task-list">Task List</Nav.Link>
-            <Nav.Link href="/profile">Profile</Nav.Link>
-            <Nav.Link href="/settings">Settings</Nav.Link>
-            <Nav.Link href="/logout">Logout</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar> */}
-
       <Card className="p-4 shadow w-100" style={{ maxWidth: "960px" }}>
-        <h3 className="text-center mb-4">Your Tasks</h3>
+        <h3 className="text-center mb-4">Your Tasks List</h3>
 
         {/* Search + Filters */}
         <Form className="mb-4">
