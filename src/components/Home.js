@@ -41,8 +41,8 @@ const Home = () => {
 
   return (
     <Container
-      // fluid
-      className="d-flex justify-content-center align-items-center vh-100"
+      fluid
+      className="d-flex justify-content-center align-items-center vh-100 mt-4 mt-md-3"
     >
       <Row className="w-100">
         <Col>

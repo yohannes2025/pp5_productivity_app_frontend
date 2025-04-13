@@ -39,8 +39,8 @@ const CreateTask = ({ users = [], onSubmit, onCancel }) => {
   return (
     <Container
       fluid
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
+      className="d-flex align-items-center justify-content-center mt-5 mt-md-3"
+      style={{ minHeight: "100vh", paddingTop: "40px" }}
     >
       <Card className="p-4 shadow" style={{ width: "100%", maxWidth: "600px" }}>
         <h3 className="text-center mb-4">Create Task</h3>
