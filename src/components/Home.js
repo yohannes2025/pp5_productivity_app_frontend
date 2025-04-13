@@ -8,7 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const localizer = momentLocalizer(moment);
 
-const CalendarView = () => {
+const Home = () => {
   const [events, setEvents] = useState([]);
   const [view, setView] = useState("month");
 
@@ -65,4 +65,4 @@ const CalendarView = () => {
   );
 };
 
-export default CalendarView;
+export default Home;

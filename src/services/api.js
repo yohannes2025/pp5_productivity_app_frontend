@@ -2,11 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 
 // Set the base URL for the API
-const API_BASE_URL = "https://your-backend-url.com/api";
+const API_BASE_URL =
+  "https://pp5-productivity-app-frontend-ea1d8fc6e9da.herokuapp.com/api";
 
 // Create an Axios instance with default configurations
 const api = axios.create({
-  baseURL: "https://pp5-productivity-app-b-b7e97074abc2.herokuapp.com/",
+  baseURL: "https://pp5-productivity-app-frontend-ea1d8fc6e9da.herokuapp.com//",
   headers: {
     "Content-Type": "application/json",
   },

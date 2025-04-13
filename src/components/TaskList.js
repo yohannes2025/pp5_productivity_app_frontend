@@ -8,12 +8,10 @@ import {
   Button,
   Card,
   Table,
-  Navbar,
-  Nav,
 } from "react-bootstrap";
 
 const TaskList = () => {
-  const [tasks, setTasks] = useState([]);
+  const [tasks] = useState([]);
   const [selectedTask, setSelectedTask] = useState(null);
   const [searchText, setSearchText] = useState("");
   const [filterOptions, setFilterOptions] = useState({
@@ -46,7 +44,7 @@ const TaskList = () => {
       }}
     >
       <Card className="p-4 shadow w-100" style={{ maxWidth: "960px" }}>
-        <h3 className="text-center mb-4">Your Tasks List</h3>
+        <h3 className="text-center mb-4">Your Task List</h3>
 
         {/* Search + Filters */}
         <Form className="mb-4">

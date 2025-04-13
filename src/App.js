@@ -4,16 +4,16 @@ import NavBar from "./components/NavBar";
 import styles from "./App.module.css";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import BrowserRouter
+import { Routes, Route } from "react-router-dom"; // Import BrowserRouter
 import Login from "./components/Login";
 import Settings from "./components/Settings";
 import Register from "./components/Register";
-import Home from "./components/CalendarView"; // Import the CalendarView
 import Profile from "./components/Profile"; // Import the Profile component
 import CreateTask from "./components/CreateTask"; // Import the CreateTask component
 import EditTask from "./components/EditTask"; // Import the EditTask component
 import TaskList from "./components/TaskList"; // Import the TaskList component
-import CalendarView from "./components/CalendarView";
+import Home from "./components/Home";
+import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
   return (
