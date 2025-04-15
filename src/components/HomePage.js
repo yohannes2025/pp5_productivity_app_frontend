@@ -23,12 +23,12 @@ const HomePage = () => {
             </p>
             <div className="d-flex justify-content-center gap-3 mt-3">
               <Link to="/register">
-                <Button variant="primary" size="lg">
+                <Button variant="outline-primary" size="lg">
                   Get Started
                 </Button>
               </Link>
               <Link to="/login">
-                <Button variant="outline-secondary" size="lg">
+                <Button variant="outline-success" size="lg">
                   Login
                 </Button>
               </Link>
