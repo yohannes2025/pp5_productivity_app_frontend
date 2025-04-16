@@ -3,8 +3,8 @@
 The **Productivity App** project focuses on developing a **calendar-driven application** designed to help users organize their time efficiently. This **browser-based platform** allows users to create and manage **tasks and habits** effectively.
 This application is built to ensure a **seamless user experience** in maintaining daily productivity through a clean, intuitive interface and smart task organization tools.
 
-
 ## Table of Contents
+
 - [User Stories](#user-stories)
 - [Technologies used](#technologies_used)
 - [Design](#design)
@@ -30,15 +30,18 @@ This application is built to ensure a **seamless user experience** in maintainin
 - [Break down of user stories into tasks](#break_down_of_user_stories_into_tasks)
 
 - [Technologies Used](#technologies-used)
+
   - [Languages Used](#languages-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
   - [Other Technologies Used](#other-technologies-used)
 
 - [Deployment](#deployment)
+
   - [Heroku](#heroku)
   - [GitHub](#github)
 
 - [Testing](#testing)
+
   - [Solved Bugs](#solved-bugs)
   - [Unfixed Bugs](#unfixed-bugs)
 
@@ -49,11 +52,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ## User Stories for Productivity App
 
 #### User Story 1: Account Creation & Login
+
 **As a** new user,  
 **I want to** create an account and log in,  
 **so that** I can access the app and manage my tasks.
 
 #### Acceptance Criteria:
+
 - Allows users to register with a unique email and password.
 - Enables the user to log in using an existing account.
 - Provides feedback if the registration or login fails (e.g., email already exists, incorrect password).
@@ -61,11 +66,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 #### User Story 2: Profile Management
+
 **As a** registered user,  
 **I want to** manage my profile,  
 **so that** I can update my information or change my password.
 
 #### Acceptance Criteria:
+
 - Users can view and edit their profile information (name, profile picture, etc.).
 - Users can change their password.
 - Upon successful profile updates, the user receives a confirmation message.
@@ -73,11 +80,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 #### User Story 3: Create Task
+
 **As a** user,  
 **I want to** create a task,  
 **so that** I can keep track of what I need to do.
 
 #### Acceptance Criteria:
+
 - Provides users with a form to input task details (title, description, due date, priority, category).
 - Allows users to attach files to the task.
 - Saves the task and displays it in the user’s task list upon submission.
@@ -85,11 +94,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 4: Set Due Date
+
 **As a** user,  
 **I want to** set a due date for my tasks,  
 **so that** I can manage my deadlines effectively.
 
 #### Acceptance Criteria:
+
 - Users can select a due date from a date picker.
 - The due date is displayed on the task list and the task detail view.
 - Tasks can be filtered based on due dates.
@@ -97,11 +108,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 5: Mark Task as Overdue
+
 **As a** user,  
 **I want to** mark tasks as overdue,  
 **so that** I can prioritize tasks that are past their due date.
 
 #### Acceptance Criteria:
+
 - The application automatically marks the task as overdue if the current date exceeds the due date.
 - Overdue tasks are visually distinct in the task list (e.g., using color coding).
 - Users can manually adjust overdue statuses if necessary.
@@ -109,55 +122,65 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 6: Assign/Unassign Task Owners
+
 **As a** user,  
 **I want to** assign or unassign multiple owners to a task,  
 **so that** I can collaborate with others effectively.
 
 #### Acceptance Criteria:
+
 - Users can select multiple users from a list to assign to a task.
 - The assigned owners are displayed alongside the task details.
 
 ---
 
 ### User Story 7: Set Task Priority
+
 **As a** user,  
 **I want to** set a priority for each task (low, medium, high),  
 **so that** I can focus on what’s most important.
 
 #### Acceptance Criteria:
+
 - Users can choose a priority level from a dropdown menu while creating/editing a task.
 - The priority is visible in the task list, and users can filter tasks based on priority.
 
 ---
 
 ### User Story 8: Categorize Tasks
+
 **As a** user,  
 **I want to** categorize my tasks,  
 **so that** I can organize them based on different projects or themes.
 
 #### Acceptance Criteria:
+
 - Users can assign categories (e.g., Work, Personal, Study) when creating/editing a task.
 - Categories are displayed in the task list and can be used for filtering tasks within the app.
 
 ---
 
 ### User Story 9: Set Task State
+
 **As a** user,  
 **I want to** set the state of my task (open, in progress, done),  
 **so that** I can track the status of each task at a glance.
 
 #### Acceptance Criteria:
+
 - Users can change the state of a task easily via dropdown options.
 - The current state is clearly indicated in the task list and is updateable.
 
 ---
 
 ### User Story 10: Task Filtering
+
 **As a** user,  
 **I want to** filter my tasks based on due date, priority, category, and state,  
 **so that** I can easily find the tasks I'm interested in.
 
 #### Acceptance Criteria:
+
 - The app provides filter options for users based on due date, priority, category, and status.
 - Users can apply multiple filters at once.
 - The task list updates dynamically to reflect the applied filters.
@@ -165,18 +188,22 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 11: Responsive Design
+
 **As a** user,  
 **I want to** access the application on multiple devices (desktop, tablet, mobile),  
 **so that** I can manage my tasks wherever I am.
 
 #### Acceptance Criteria:
+
 - The app is fully responsive and functional across different screen sizes.
 - Users should have a consistent experience with easy navigation and task management features.
 
 ## Break down of user stories into tasks
 
 ### User Story 1: Account Creation & Login
+
 #### Tasks:
+
 1. **Design Registration Form:** Create a form with fields for email and password.
 2. **Implement Backend Registration Endpoint:** Create a Django Rest Framework endpoint for user registration.
 3. **Handle Form Submission:** Add logic in React to capture user input and send a POST request to the registration endpoint.
@@ -189,7 +216,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 2: Profile Management
+
 #### Tasks:
+
 1. **Design Profile Page:** Create a UI layout for user profile information editing.
 2. **Implement Backend Endpoint for Profile:** Create endpoints for retrieving and updating user profile data.
 3. **Handle Profile Data Fetching:** Use React to fetch and display the user data.
@@ -199,7 +228,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 3: Create Task
+
 #### Tasks:
+
 1. **Design Task Creation Form:** Create a user-friendly form for creating tasks (fields for title, description, due date, etc.).
 2. **Implement Backend Task Creation Endpoint:** Create a Django REST Framework endpoint to handle task creation.
 3. **Handle Form Submission:** Capture task data in React and send it via a POST request to the backend.
@@ -209,7 +240,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 4: Set Due Date
+
 #### Tasks:
+
 1. **Integrate Date Picker:** Add a date picker component to the task creation form.
 2. **Send Due Date with Task Creation/Update:** Ensure the due date is included in the requests for task creation or updates.
 3. **Display Due Date in Task List:** Update the task list UI to show due dates for each task.
@@ -217,7 +250,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 5: Mark Task as Overdue
+
 #### Tasks:
+
 1. **Define Overdue Logic:** Implement logic in the backend to check if a task is overdue based on the current date and due date.
 2. **Update Task Model:** Add an “is_overdue” field to the task model, if necessary.
 3. **Display Visual Indicators:** Update UI to visually distinguish overdue tasks (e.g., through color coding).
@@ -226,7 +261,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 6: Assign/Unassign Task Owners
+
 #### Tasks:
+
 1. **Design Owner Assignment UI:** Create a UI component to display and select task owners.
 2. **Implement Backend Logic for Assignment:** Create endpoints to handle assigning and unassigning owners.
 3. **Capture Owner Selection:** Add logic in React to capture selected owners and send a PATCH request upon updates.
@@ -235,7 +272,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 7: Set Task Priority
+
 #### Tasks:
+
 1. **Add Priority Field to Task Form:** Include a dropdown for priority selection (low, medium, high) in the task creation form.
 2. **Implement Backend For Priority Handling:** Modify task model and backend logic to accept priority as part of the task data.
 3. **Display Priority in Task List:** Ensure that priority information is displayed in the task overview.
@@ -244,7 +283,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 8: Categorize Tasks
+
 #### Tasks:
+
 1. **Create Category Selection Field:** Add a field for categorizing tasks in the task creation form.
 2. **Update Backend to Handle Categories:** Modify the task model and backend to allow category assignments.
 3. **Display Task Categories:** Ensure categories are visible in both the task list and details.
@@ -253,7 +294,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 9: Set Task State
+
 #### Tasks:
+
 1. **Design State Selection UI:** Include a dropdown or buttons for task states (open, in progress, done).
 2. **Implement Backend Handling for Task States:** Create logic in Django to update task status.
 3. **Update UI Based on Task State:** Ensure the task list reflects the current states visually.
@@ -262,7 +305,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 10: Task Filtering
+
 #### Tasks:
+
 1. **Design Filter UI:** Create a filter panel with options for due date, priority, category, and state.
 2. **Implement Filter Logic in Backend:** Add filtering parameters to the task retrieval endpoint.
 3. **Capture Selected Filters in React:** Handle filter selections and dynamically update the task list based on applied filters.
@@ -270,7 +315,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 11: Responsive Design
+
 #### Tasks:
+
 1. **Implement CSS Framework:** Integrate Bootstrap or similar CSS framework for responsive design.
 2. **Test UI Across Devices:** Verify that all components function correctly on different screen sizes (desktop, tablet, mobile).
 3. **Adjust Layouts:** Modify layouts as necessary to enhance usability on smaller screens.
@@ -278,7 +325,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 ---
 
 ### User Story 12: Search Functionality
+
 #### Tasks:
+
 1. **Add Search Bar UI:** Create a search input field at the top of the task list.
 2. **Implement Search Logic in Backend:** Create a search endpoint that filters tasks based on keywords in titles/descriptions.
 3. **Capture Search Input in React:** Handle the input from the search bar and send the search request to the backend.
@@ -287,6 +336,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 ## 🛠️ Technologies Used
 
 ### Front-End
+
 - **HTML5** – Semantic markup for structuring content.
 - **CSS3** – Responsive styling with modern layout techniques.
 - **JavaScript (ES6+)** – Dynamic behavior and logic handling.
@@ -300,6 +350,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 - **Heroku** – Front-End deployment to the cloud.
 
 ### Back-End
+
 - **Python 3** – General-purpose programming for logic and data handling.
 - **Django** – High-level web framework for building the application structure.
 - **Django REST Framework (DRF)** – API creation with full CRUD capabilities.
@@ -310,6 +361,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 - **Environment Variables** – Securing sensitive credentials and configuration.
 
 ### Tooling & Project Management
+
 - **VS Code** – Source code editor with extensions for React and Django.
 - **Postman / Insomnia** – API testing tools.
 - **GitHub Projects** – Agile board for user stories and sprint planning.
@@ -350,24 +402,24 @@ Typography is responsive and consistent across components to maintain design uni
 Wireframes were designed during the planning phase to define layout, content structure, and user flow. They include:
 
 - **HomePage** – Main landing page
-![home_wireframe_pc](../assets/images/home_wireframe_pc.png)
-![home_page_pc](../assets/images/home_page_pc.png)
+  ![home_wireframe_pc](../assets/images/home_wireframe_pc.png)
+  ![home_page_pc](../assets/images/home_page_pc.png)
 - **Profile** – User profile page
-![profile_wireframe_pc](../assets/images/profile_wireframe_pc.png)
-![profile_page_pc](../assets/images/profile_page_pc.png)
+  ![profile_wireframe_pc](../assets/images/profile_wireframe_pc.png)
+  ![profile_page_pc](../assets/images/profile_page_pc.png)
 - **Settings** – App and account settings
-![settigns_wireframe_pc](../assets/images/settings__wireframe_pc.png)
-![settings_page_pc](../assets/images/settings_page_pc.png)
+  ![settigns_wireframe_pc](../assets/images/settings_page__wireframe_pc.png)
+  ![settings_page_pc](../assets/images/settings_page_pc.png)
 - **Tasks (Dropdown Menu)**:
-  - Create Task 
-![create_task_wireframe_pc](../assets/images/create_task_wireframe_pc.png)
-![create_task_page_pc](../assets/images/create_task_page_pc.png)
+  - Create Task
+    ![create_task_wireframe_pc](../assets/images/create_task-page_wireframe_pc.png)
+    ![create_task_page_pc](../assets/images/create_task_page_pc.png)
   - Edit Task
-![edit_task_wireframe_pc](../assets/images/create_task_wireframe_pc.png)
-![edit_task_page_pc](../assets/images/create_task_page_pc.png)
+    ![edit_task_wireframe_pc](../assets/images/edit_task_page_wireframe_pc.png)
+    ![edit_task_page_pc](../assets/images/edit_task_page_pc.png)
   - Task List
- ![task_list_wireframe_pc](../assets/images/create_task_wireframe_pc.png)
-![task_list_page_pc](../assets/images/create_task_page_pc.png)
+    ![task_list_wireframe_pc](../assets/images/task_list_page_wireframe_pc.png)
+    ![task_list_page_pc](../assets/images/task_list_page_pc.png)
 
 Wireframes were created using Balsamiq and informed the React component structure and routing. All major interface elements were validated against the wireframes before implementation.
 
@@ -380,13 +432,14 @@ Wireframes were created using Balsamiq and informed the React component structur
 - Components use either **functional** or **class-based** approaches, where appropriate.
 
 ## Agile Methodology
+
 - Due to time constraint Agile Methodoly was not applied
 
 ## Features
 
 ### Existing Features
 
-####  🔧General Features
+#### 🔧General Features
 
 - Create tasks with custom **due dates**
 - Automatically mark tasks as **overdue**
@@ -398,6 +451,7 @@ Wireframes were created using Balsamiq and informed the React component structur
 - Apply **advanced filtering** to navigate task lists
 
 ### Navigation Bar
+
 #### 🌐 NavBar Component
 
 The `NavBar` component is a responsive, top-fixed navigation bar for the **Productivity App**, built using **React Bootstrap** and **React Router**. It provides users with intuitive access to the main sections of the application.
@@ -429,10 +483,12 @@ The `HomePage` component acts as the **landing page** for the Productivity App, 
 #### ✨ Features
 
 - **Headline & Subtext**:
-  - A bold, motivational headline: *"Stay Productive, Stay Ahead"*
+
+  - A bold, motivational headline: _"Stay Productive, Stay Ahead"_
   - Supporting text highlights the app's purpose — organizing life and enhancing collaboration.
 
 - **Call-to-Action Buttons**:
+
   - **Get Started** – navigates users to the registration page.
   - **Login** – directs existing users to the login page.
 
@@ -451,15 +507,18 @@ The `Profile` component allows users to **view and update their personal profile
 #### ✨ Features
 
 - **Profile Information Display & Edit**:
+
   - Displays user's current `name`, `email`, and `avatar`.
   - Allows editing of name and email fields.
   - Supports avatar upload using a file input.
 
 - **Profile Update Functionality**:
+
   - Sends a PUT request to update the user's profile on the backend.
   - Updates are handled via controlled form fields and state management.
 
 - **User Data Table**:
+
   - Fetches and displays additional user-related data in a table format.
   - Table columns include `ID`, `Name`, `Email`, and `Other Info`.
   - Displays a message if no data is available.
@@ -479,22 +538,27 @@ The `Settings` component provides a customizable user preferences interface, all
 #### ✨ Features
 
 - **Theme Selection**:
+
   - Users can toggle between `Light` and `Dark` themes.
 
 - **Calendar Configuration**:
+
   - Choose whether the calendar week starts on `Sunday` or `Monday`.
 
 - **Notification Preferences**:
+
   - Enable or disable overall notifications.
   - Choose specific types like:
     - Email Notifications
     - Push Notifications
 
 - **Data Fetch & Save**:
+
   - Automatically fetches saved settings from `/api/settings` when the component mounts.
   - Allows users to update and save preferences via a PUT request.
 
 - **User Feedback**:
+
   - Displays success or error messages in an `Alert` component.
 
 - **Responsive UI**:
@@ -505,6 +569,7 @@ The `Settings` component provides a customizable user preferences interface, all
 
 This component enhances user control over their experience by offering configurable settings for appearance, scheduling, and communication preferences. It supports a more personalized and user-friendly app environment.
 .
+
 ### 📝 CreateTask Component
 
 The `CreateTask` component provides a user-friendly interface for creating new tasks within the productivity app.
@@ -512,6 +577,7 @@ The `CreateTask` component provides a user-friendly interface for creating new t
 #### ✨ Features
 
 - **Form Fields**:
+
   - **Title**: Required text input for the task's name.
   - **Description**: Optional multi-line input for additional task details.
   - **Due Date**: Integrated date picker using `react-datepicker`.
@@ -521,6 +587,7 @@ The `CreateTask` component provides a user-friendly interface for creating new t
   - **File Upload**: Supports multiple file attachments.
 
 - **Form Actions**:
+
   - `Create Task`: Submits the form via the `onSubmit` callback with all input values.
   - `Cancel Creation`: Triggers the `onCancel` callback without submitting.
 
@@ -528,8 +595,6 @@ The `CreateTask` component provides a user-friendly interface for creating new t
   - Wrapped in a `Card` with spacing and shadows for clean presentation.
   - Centered layout using Bootstrap's `Container`, `Row`, and `Col` components.
   - Optimized for mobile and desktop views.
-
-
 
 #### 🚀 Purpose
 
@@ -541,11 +606,13 @@ The `EditTask` component allows users to update and modify existing tasks throug
 
 #### ✨ Features
 
-- **Pre-filled Form Fields**: 
+- **Pre-filled Form Fields**:
+
   - Loads the task data into the form for easy editing.
   - Includes fields for title, description, due date, priority, category, assigned users, and file attachments.
 
 - **Editable Fields**:
+
   - **Title**: Required field for task name.
   - **Description**: Optional multi-line input.
   - **Due Date**: Date picker with initial value from the task.
@@ -555,6 +622,7 @@ The `EditTask` component allows users to update and modify existing tasks throug
   - **Files**: Option to upload new files (existing files handling is customizable).
 
 - **Actions**:
+
   - `Edit Task`: Submits the updated task data through the `onSubmit` handler.
   - `Cancel Edit`: Discards changes and triggers the `onCancel` callback.
 
@@ -574,15 +642,18 @@ The `TaskList` component provides users with an interactive view of their tasks.
 #### ✨ Features
 
 - **Search & Filter**:
+
   - **Search**: Allows users to search tasks by title or keyword.
   - **Category Filter**: Drop-down to filter tasks by category.
   - **Sort By**: Option to sort tasks by due date or priority.
 
 - **Task Table**:
+
   - Displays a table of tasks with columns for Title, Due Date, Priority, Status, and Assigned Users.
   - Each task is clickable, revealing detailed information in a popup modal.
 
 - **Task Details**:
+
   - Clicking a task opens a popup modal displaying:
     - Title, description, due date, category, priority, and status.
     - Action buttons to mark the task as complete, edit it, or close the modal.
@@ -596,28 +667,35 @@ The `TaskList` component provides users with an interactive view of their tasks.
 The `TaskList` component is designed for task management, allowing users to easily view, filter, and interact with tasks in a structured and efficient way. It is ideal for projects or productivity applications where task tracking and management are essential.
 
 ### Other Technologies Used
+
 - Mention other relevant technologies integrated into the project.
 
 ## Deployment
 
 ### Heroku
+
 - Description of the deployment process using Heroku.
 
 ### GitHub
+
 - Information on how the project is managed and version-controlled with GitHub.
 
 ## Testing
 
 ### Solved Bugs
+
 - List of bugs that have been addressed and resolved.
 
 ### Unfixed Bugs
+
 - List of known issues that remain unfixed.
 
 ## Credits
 
 ### Tutorials & Code Used
+
 - Acknowledge tutorials and code snippets referenced in the project.
 
 ### Acknowledgments
+
 - Express thanks to contributors and resources that supported the project.
