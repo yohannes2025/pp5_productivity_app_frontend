@@ -5,7 +5,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 
 ## Table of Contents
 
-- [User Stories](#user-stories)
+- [User Stories for Productivity App](#user-stories-for-productivity-app)
 - [Technologies used](#technologies_used)
     - [Front-End](#front-end)
     - [Back-End](#Back-End)
@@ -14,7 +14,7 @@ This application is built to ensure a **seamless user experience** in maintainin
   - [Color Scheme](#color-scheme)
   - [Typography](#typography)
   - [Wireframes](#wireframes)
-  - [Reusable Component Design](#reusable-component-design)
+  - [Component-Based Architecture](#component-based-architecture)
   - [Accessibility](#accessibility)
   - [Agile Methodology](#agile-methodology)
 - [Features](#features)
@@ -333,7 +333,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 3. **Capture Search Input in React:** Handle the input from the search bar and send the search request to the backend.
 4. **Display Search Results:** Dynamically update the task list to reflect search results.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 ### Front-End
 
@@ -363,15 +363,16 @@ This application is built to ensure a **seamless user experience** in maintainin
 ### Tooling & Project Management
 
 - **VS Code** – Source code editor with extensions for React and Django.
-- **Postman / Insomnia** – API testing tools.
-- **GitHub Projects** – Agile board for user stories and sprint planning.
-- **Wireframes & Mockups** – UI/UX planning and design documentation.
+- **Github** - Used for project management and version control.
 
-## 🎨 Design
+- GitHub's project management and version control features create a robust environment for collaborative software development. By utilizing branching, pull requests, issue tracking, project boards, and documentation tools, teams can effectively manage tasks, maintain code quality, and streamline collaboration, ultimately leading to successful project outcomes.
+
+
+## Design
 
 The design of this content-sharing platform focuses on accessibility, user experience, responsiveness, and clarity. The following practices and tools were used throughout the design and development phases:
 
-### 🟡 Color Scheme
+### Color Scheme
 
 The application's color palette is designed to promote readability, engagement, and modern aesthetics. The chosen colors follow accessibility contrast guidelines and reflect a clean, professional tone suitable for content sharing:
 
@@ -384,7 +385,7 @@ These colors are applied consistently across components using Bootstrap’s util
 
 ---
 
-### 🔤 Typography
+### Typography
 
 To ensure readability and a modern look:
 
@@ -397,7 +398,7 @@ Typography is responsive and consistent across components to maintain design uni
 
 ---
 
-### 🗂 Wireframes
+### Wireframes
 
 Wireframes were designed during the planning phase to define layout, content structure, and user flow. They include:
 
@@ -459,11 +460,11 @@ Wireframes were created using Balsamiq and informed the React component structur
 
 ### Navigation Bar
 
-#### 🌐 NavBar Component
+#### NavBar Component
 
 The `NavBar` component is a responsive, top-fixed navigation bar for the **Productivity App**, built using **React Bootstrap** and **React Router**. It provides users with intuitive access to the main sections of the application.
 
-#### 🔗 Navigation Links
+#### Navigation Links
 
 - **HomePage** – Main landing page
 - **Profile** – User profile page
@@ -473,7 +474,7 @@ The `NavBar` component is a responsive, top-fixed navigation bar for the **Produ
   - Edit Task
   - Task List)
 
-#### ⚙️ Key Features
+#### Key Features
 
 - **Responsive Design**: Collapses into a hamburger menu on smaller screens
 - **Auto-collapse Behavior**: Automatically closes the navbar on route changes or link clicks
@@ -483,11 +484,11 @@ The `NavBar` component is a responsive, top-fixed navigation bar for the **Produ
 
 The component also uses the `useLocation` hook from `react-router-dom` to detect route changes and control the navbar’s state accordingly.
 
-### 🏠 HomePage Component
+### HomePage Component
 
 The `HomePage` component acts as the **landing page** for the Productivity App, providing users with a clean, modern introduction to the platform's purpose and benefits.
 
-#### ✨ Features
+#### Features
 
 - **Headline & Subtext**:
 
@@ -503,15 +504,15 @@ The `HomePage` component acts as the **landing page** for the Productivity App, 
   - Utilizes `Container`, `Row`, and `Col` from **React Bootstrap** for a fully responsive design.
   - Vertically and horizontally centers content using Bootstrap utility classes.
 
-#### 🚀 Purpose
+#### Purpose
 
 This component sets the tone for the application by welcoming users and providing them with clear actions to begin their productivity journey — whether by signing up or logging in.
 
-### 👤 Profile Component
+### Profile Component
 
 The `Profile` component allows users to **view and update their personal profile information** in an intuitive and user-friendly interface.
 
-#### ✨ Features
+#### Features
 
 - **Profile Information Display & Edit**:
 
@@ -534,15 +535,15 @@ The `Profile` component allows users to **view and update their personal profile
   - Centered layout using React Bootstrap `Container`, `Row`, and `Col`.
   - Form and table adapt gracefully across screen sizes.
 
-#### 🚀 Purpose
+#### Purpose
 
 This component offers a centralized profile management interface, allowing users to easily keep their information up to date and view key account data. It enhances user experience through an accessible, responsive, and functional design.
 
-### ⚙️ Settings Component
+### Settings Component
 
 The `Settings` component provides a customizable user preferences interface, allowing users to tailor the app experience to their needs.
 
-#### ✨ Features
+#### Features
 
 - **Theme Selection**:
 
@@ -572,16 +573,16 @@ The `Settings` component provides a customizable user preferences interface, all
   - Uses Bootstrap’s grid system to ensure layout adapts to different screen sizes.
   - Clean and accessible form UI with appropriate spacing, shadow, and padding.
 
-#### 🚀 Purpose
+#### Purpose
 
 This component enhances user control over their experience by offering configurable settings for appearance, scheduling, and communication preferences. It supports a more personalized and user-friendly app environment.
 .
 
-### 📝 CreateTask Component
+### CreateTask Component
 
 The `CreateTask` component provides a user-friendly interface for creating new tasks within the productivity app.
 
-#### ✨ Features
+#### Features
 
 - **Form Fields**:
 
@@ -603,15 +604,15 @@ The `CreateTask` component provides a user-friendly interface for creating new t
   - Centered layout using Bootstrap's `Container`, `Row`, and `Col` components.
   - Optimized for mobile and desktop views.
 
-#### 🚀 Purpose
+#### Purpose
 
 Enables users to easily create detailed, collaborative tasks with due dates, priorities, and attachments—empowering productivity and team coordination.
 
-### ✏️ EditTask Component
+### Edit Task Component
 
 The `EditTask` component allows users to update and modify existing tasks through an intuitive form-based UI.
 
-#### ✨ Features
+#### Features
 
 - **Pre-filled Form Fields**:
 
@@ -638,15 +639,15 @@ The `EditTask` component allows users to update and modify existing tasks throug
   - Styled with padding and shadow for a clean, modern UI.
   - Mobile and desktop friendly.
 
-#### 🛠 Use Case
+#### Use Case
 
 This component is designed to help users efficiently update tasks without needing to recreate them, making collaboration and task management smoother.
 
-### 📝 TaskList Component
+### TaskList Component
 
 The `TaskList` component provides users with an interactive view of their tasks. It includes features for searching, filtering, sorting, and managing tasks.
 
-#### ✨ Features
+#### Features
 
 - **Search & Filter**:
 
@@ -669,7 +670,7 @@ The `TaskList` component provides users with an interactive view of their tasks.
   - The task list and task details modal are styled with Bootstrap for a responsive, clean interface.
   - The page adjusts to different screen sizes, making it suitable for both mobile and desktop users.
 
-#### 🛠 Use Case
+#### Use Case
 
 The `TaskList` component is designed for task management, allowing users to easily view, filter, and interact with tasks in a structured and efficient way. It is ideal for projects or productivity applications where task tracking and management are essential.
 
@@ -714,15 +715,6 @@ To duplicate deployment to Heroku, follow these steps:
 - Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed API to be automatically redeployed every time you push changes to GitHub.
 - Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
 - Your API will shortly be deployed and you will be given a link to the deployed site when the process is complete.
-
-
-
-
-### GitHub
-
-- Github is used for project management and version control.
-
-- GitHub's project management and version control features create a robust environment for collaborative software development. By utilizing branching, pull requests, issue tracking, project boards, and documentation tools, teams can effectively manage tasks, maintain code quality, and streamline collaboration, ultimately leading to successful project outcomes
 
 ## Testing
 
