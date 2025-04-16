@@ -7,6 +7,9 @@ This application is built to ensure a **seamless user experience** in maintainin
 
 - [User Stories](#user-stories)
 - [Technologies used](#technologies_used)
+    - [Front-End](#front-end)
+    - [Back-End](#Back-End)
+    - [Tooling & Project Management](#tooling-&-prodjuct-management)
 - [Design](#design)
   - [Color Scheme](#color-scheme)
   - [Typography](#typography)
@@ -28,9 +31,6 @@ This application is built to ensure a **seamless user experience** in maintainin
     - [Edit Task Page](#edit-task-page)
     - [Task List Page](#task-list-page)
 - [Break down of user stories into tasks](#break_down_of_user_stories_into_tasks)
-
-- [Technologies Used](#technologies-used)
-
   - [Languages Used](#languages-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
   - [Other Technologies Used](#other-technologies-used)
@@ -403,22 +403,28 @@ Wireframes were designed during the planning phase to define layout, content str
 
 - **HomePage** – Main landing page
 ![home_wireframe_pc](./src/assets/images/home_page_wireframe_pc.png)
+![home_wireframe_mobile](./src/assets/images/home_page_wireframe_mobile.png)
 ![home_page_pc](./src/assets/images/home_page_pc.png)
 - **Profile** – User profile page
 ![profile_wireframe_pc](./src/assets/images/profile_page_wireframe_pc.png)
+![profile_wireframe_mobile](./src/assets/images/profile_page_wireframe_mobile.png)
 ![profile_page_pc](./src/assets/images/profile_page_pc.png)
 - **Settings** – App and account settings
 ![settings_wireframe_pc](./src/assets/images/settings_page_wireframe_pc.png)
+![settings_wireframe_mobile](./src/assets/images/settings_page_wireframe_mobile.png)
 ![settings_page_pc](./src/assets/images/settings_page_pc.png)
 - **Tasks (Dropdown Menu)**:
   - Create Task 
 ![create_task_wireframe_pc](./src/assets/images/create_task_page_wireframe_pc.png)
+![create_task_wireframe_mobile](./src/assets/images/create_task_page_wireframe_mobile.png)
 ![create_task_page_pc](./src/assets/images/create_task_page_pc.png)
   - Edit Task
 ![edit_task_wireframe_pc](./src/assets/images/edit_task_page_wireframe_pc.png)
+![edit_task_wireframe_mobile](./src/assets/images/edit_task_page_wireframe_mobile.png)
 ![edit_task_page_pc](./src/assets/images/Edit_task_page_pc.png)
   - Task List
 ![task_list_wireframe_pc](./src/assets/images/task_list_page_wireframe_pc.png)
+![task_list_wireframe_mobile](./src/assets/images/task_list_page_wireframe_mobile.png)
 ![task_list_page_pc](./src/assets/images/task_list_page_pc.png)
 
 
@@ -667,15 +673,50 @@ The `TaskList` component provides users with an interactive view of their tasks.
 
 The `TaskList` component is designed for task management, allowing users to easily view, filter, and interact with tasks in a structured and efficient way. It is ideal for projects or productivity applications where task tracking and management are essential.
 
-### Other Technologies Used
-
-- Mention other relevant technologies integrated into the project.
-
 ## Deployment
 
 ### Heroku
 
+The Productivity API is deployed to Heroku, using PostgreSql database.
+To duplicate deployment to Heroku, follow these steps:
+
 - Description of the deployment process using Heroku.
+- Fork or clone this repository in GitHub.
+- You will need a Cloudinary account to host user profile images.
+- Login to Cloudinary.
+- Select the 'dashboard' option.
+- Copy the value of the 'API Environment variable' from the part starting `cloudinary://` to the end. You may need to select the eye icon to view the full environment variable. Paste this value somewhere for safe keeping as you will need it shortly (but destroy after deployment).
+- Log in to Heroku.
+- Select 'Create new app' from the 'New' menu at the top right.
+- Enter a name for the app and select the appropriate region.
+- Select 'Create app'.
+- Select 'Settings' from the menu at the top.
+- Login to ElephantSQL.
+- Click 'Create new instance' on the dashboard.
+- Name the 'plan' and select the 'Tiny Turtle (free)' plan.
+- Select 'select region'.
+- Choose the nearest data centre to your location.
+- Click 'Review'.
+- Go to the ElephantSQL dashboard and click on the 'database instance name' for this project.
+- Copy the ElephantSQL database URL to your clipboard (this starts with `postgres://`).
+- Return to the Heroku dashboard.
+- Select the 'settings' tab.
+- Locate the 'reveal config vars' link and select.
+- Enter the following config var names and values:
+    - `CLOUDINARY_URL`: *your cloudinary URL as obtained above*
+    - `DATABASE_URL`: *your ElephantSQL postgres database URL as obtained above*
+    - `SECRET_KEY`: *your secret key*
+    - `ALLOWED_HOST`: *the url of your Heroku app (but without the `https://` prefix)*
+- Select the 'Deploy' tab at the top.
+- Select 'GitHub' from the deployment options and confirm you wish to deploy using GitHub. You may be asked to enter your GitHub password.
+- Find the 'Connect to GitHub' section and use the search box to locate your repo.
+- Select 'Connect' when found.
+- Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed API to be automatically redeployed every time you push changes to GitHub.
+- Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
+- Your API will shortly be deployed and you will be given a link to the deployed site when the process is complete.
+
+
+
 
 ### GitHub
 
@@ -699,4 +740,4 @@ The `TaskList` component is designed for task management, allowing users to easi
 
 ### Acknowledgments
 
-- Express thanks to contributors and resources that supported the project.
+- Thank you very much Code Institute Student Care Team Tutor and Mentor for your dedication and commitment in supporting me to achieve in submitting this Advanced Front-End Full Stack Software Development project and broadening my career opportunities.
