@@ -6,10 +6,13 @@ This application is built to ensure a **seamless user experience** in maintainin
 ## Table of Contents
 
 - [User Stories for Productivity App](#user-stories-for-productivity-app)
-- [Technologies used](#technologies_used)
+- [Break Down of User Stories into Tasks](#break-down-of-user-stories-into-tasks)
+
+- [Technologies used](#technologies-used)
     - [Front-End](#front-end)
     - [Back-End](#Back-End)
-    - [Tooling & Project Management](#tooling-&-prodjuct-management)
+    - [Tools & Project Managaement](#tools-and-prodject-management)
+
 - [Design](#design)
   - [Color Scheme](#color-scheme)
   - [Typography](#typography)
@@ -17,23 +20,20 @@ This application is built to ensure a **seamless user experience** in maintainin
   - [Component-Based Architecture](#component-based-architecture)
   - [Accessibility](#accessibility)
   - [Agile Methodology](#agile-methodology)
+
 - [Features](#features)
   - [Existing Features](#existing-features)
     - [General Features](#general-features)
     - [Navigation Bar](#navigation-bar)
-    - [Home Page](#home-Page)
-    - [Profile Page](#profile-page)
-    - [Registration Page](#registration-page)
-    - [Login Page](#login-page)
-    - [Profile Page](#profile-page)
-    - [Settings Page](#settings-page)
-    - [Create Task Page](#creat-task-page)
-    - [Edit Task Page](#edit-task-page)
-    - [Task List Page](#task-list-page)
-- [Break down of user stories into tasks](#break_down_of_user_stories_into_tasks)
-  - [Languages Used](#languages-used)
-  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-  - [Other Technologies Used](#other-technologies-used)
+    - [Home Page Component](#home-page-component)
+    - [Profile Page Component](#profile-page-component)
+    - [User Register Page Component](#user-register-component)
+    - [User Login Page Component](#user-login-component)
+    - [Profile Page Component](#profile-page-component)
+    - [Settings Page Component](#settings-page-component)
+    - [Create Task Page Component](#create-task-page-component)
+    - [Edit Task Page Component](#edit-task-page-component)
+    - [Task List Page Component](#task-list-page-component)
 
 - [Deployment](#deployment)
 
@@ -198,7 +198,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 - The app is fully responsive and functional across different screen sizes.
 - Users should have a consistent experience with easy navigation and task management features.
 
-## Break down of user stories into tasks
+## Break Down of User Stories into Tasks
 
 ### User Story 1: Account Creation & Login
 
@@ -360,7 +360,7 @@ This application is built to ensure a **seamless user experience** in maintainin
 - **Heroku** – Deployment of the API to a cloud platform.
 - **Environment Variables** – Securing sensitive credentials and configuration.
 
-### Tooling & Project Management
+### Tools & Project Management
 
 - **VS Code** – Source code editor with extensions for React and Django.
 - **Github** - Used for project management and version control.
@@ -439,6 +439,9 @@ Wireframes were created using Balsamiq and informed the React component structur
 - Each component handles specific logic and layout responsibilities, following separation of concerns.
 - Components use either **functional** or **class-based** approaches, where appropriate.
 
+### Accessibility
+- Accessibility has been a core focus throughout the development of this content-sharing web application to ensure an inclusive, user-friendly experience for a diverse audience, including users with disabilities.
+
 ## Agile Methodology
 
 - Due to time constraint Agile Methodoly was not applied
@@ -447,7 +450,7 @@ Wireframes were created using Balsamiq and informed the React component structur
 
 ### Existing Features
 
-#### 🔧General Features
+#### General Features
 
 - Create tasks with custom **due dates**
 - Automatically mark tasks as **overdue**
@@ -484,7 +487,7 @@ The `NavBar` component is a responsive, top-fixed navigation bar for the **Produ
 
 The component also uses the `useLocation` hook from `react-router-dom` to detect route changes and control the navbar’s state accordingly.
 
-### HomePage Component
+### Home Page Component
 
 The `HomePage` component acts as the **landing page** for the Productivity App, providing users with a clean, modern introduction to the platform's purpose and benefits.
 
@@ -508,7 +511,39 @@ The `HomePage` component acts as the **landing page** for the Productivity App, 
 
 This component sets the tone for the application by welcoming users and providing them with clear actions to begin their productivity journey — whether by signing up or logging in.
 
-### Profile Component
+### User Register Component
+
+`Register.js` is a React component that handles user registration for the application. It provides a responsive and user-friendly form where new users can create an account by entering their **name**, **email**, and **password**.
+
+#### Features
+
+**Form Inputs**: Uses controlled components (`useState`) to capture user input for name, email, and password.
+**API Integration**: Sends a POST request to the `/register` endpoint using a custom `api` service (Axios).
+**Navigation**: Redirects users to the login page (`/login`) after successful registration using `useNavigate` from `react-router-dom`.
+**Error Handling**: Displays an error alert if the registration request fails (e.g., email already in use).
+**Responsive Design**: Uses Bootstrap's `Container`, `Row`, `Col`, and `Card` for clean, mobile-friendly layout.
+**Styling**: Uses Bootstrap components to ensure the UI is modern and consistent with the rest of the application.
+
+This component is a key part of the user authentication flow and helps ensure a smooth onboarding experience for new users.
+
+### User Login Component
+
+`Login.js` is a React component that handles user authentication. It provides a simple login form for users to enter their **email** and **password**, and securely access the app.
+
+#### Features
+
+**Controlled Form**: Uses React `useState` to manage input fields (`email`, `password`) via `formData`.
+**API Authentication**: Sends user credentials to a backend login endpoint using a custom `api` service.
+**Token Storage**: On successful login, saves the JWT token to `localStorage` for authenticated API access.
+**Navigation**: Redirects the user to the home page (`/`) using `useNavigate` from `react-router-dom`.
+**Responsive Layout**: Utilizes Bootstrap’s `Container`, `Row`, `Col`, and `Card` components for a clean, responsive UI.
+**Form Styling**: Styled with React-Bootstrap components for consistency across the app.
+
+This component is a core part of the authentication system, providing a secure and user-friendly way for users to log in to the app.
+
+
+
+### Profile Page Component
 
 The `Profile` component allows users to **view and update their personal profile information** in an intuitive and user-friendly interface.
 
@@ -539,7 +574,7 @@ The `Profile` component allows users to **view and update their personal profile
 
 This component offers a centralized profile management interface, allowing users to easily keep their information up to date and view key account data. It enhances user experience through an accessible, responsive, and functional design.
 
-### Settings Component
+### Settings Page Component
 
 The `Settings` component provides a customizable user preferences interface, allowing users to tailor the app experience to their needs.
 
@@ -578,7 +613,7 @@ The `Settings` component provides a customizable user preferences interface, all
 This component enhances user control over their experience by offering configurable settings for appearance, scheduling, and communication preferences. It supports a more personalized and user-friendly app environment.
 .
 
-### CreateTask Component
+### Create Task Page Component
 
 The `CreateTask` component provides a user-friendly interface for creating new tasks within the productivity app.
 
@@ -608,7 +643,7 @@ The `CreateTask` component provides a user-friendly interface for creating new t
 
 Enables users to easily create detailed, collaborative tasks with due dates, priorities, and attachments—empowering productivity and team coordination.
 
-### Edit Task Component
+### Edit Task Page Component
 
 The `EditTask` component allows users to update and modify existing tasks through an intuitive form-based UI.
 
@@ -643,7 +678,7 @@ The `EditTask` component allows users to update and modify existing tasks throug
 
 This component is designed to help users efficiently update tasks without needing to recreate them, making collaboration and task management smoother.
 
-### TaskList Component
+### Task List page Component
 
 The `TaskList` component provides users with an interactive view of their tasks. It includes features for searching, filtering, sorting, and managing tasks.
 
