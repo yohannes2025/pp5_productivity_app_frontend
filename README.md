@@ -408,7 +408,7 @@ Wireframes were designed during the planning phase to define layout, content str
 ![profile_wireframe_pc](./src/assets/images/profile_page_wireframe_pc.png)
 ![profile_page_pc](./src/assets/images/profile_page_pc.png)
 - **Settings** – App and account settings
-![settings_wireframe_pc](./src/assets/images/settings_page_wireframe_pc.png)
+![settings_wireframe_pc](./src/assets/images/settigns_page_ wireframe_pc.png)
 ![settings_page_pc](./src/assets/images/settings_page_pc.png)
 - **Tasks (Dropdown Menu)**:
   - Create Task 
@@ -416,7 +416,7 @@ Wireframes were designed during the planning phase to define layout, content str
 ![create_task_page_pc](./src/assets/images/create_task_page_pc.png)
   - Edit Task
 ![edit_task_wireframe_pc](./src/assets/images/edit_task_page_wireframe_pc.png)
-![edit_task_page_pc](./src/assets/images/edit_task_page_pc.png)
+![edit_task_page_pc](./src/assets/images/Edit_task_page_pc.png)
   - Task List
 ![task_list_wireframe_pc](./src/assets/images/task_list_page_wireframe_pc.png)
 ![task_list_page_pc](./src/assets/images/task_list_page_pc.png)
