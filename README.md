@@ -720,7 +720,9 @@ To duplicate deployment to Heroku, follow these steps:
 
 ### GitHub
 
-- Information on how the project is managed and version-controlled with GitHub.
+- Github is used for project management and version control.
+
+- GitHub's project management and version control features create a robust environment for collaborative software development. By utilizing branching, pull requests, issue tracking, project boards, and documentation tools, teams can effectively manage tasks, maintain code quality, and streamline collaboration, ultimately leading to successful project outcomes
 
 ## Testing
 
