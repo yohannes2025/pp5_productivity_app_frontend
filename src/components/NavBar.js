@@ -43,7 +43,7 @@ function NavBar() {
                 className={styles.NavLink}
                 onClick={handleNavClick}
               >
-                <i className="fa-solid fa-house"></i> HomePage
+                <i className="fa-solid fa-house"></i> Home Page
               </NavLink>
               <NavLink
                 exact="true"
@@ -51,7 +51,7 @@ function NavBar() {
                 className={styles.NavLink}
                 onClick={handleNavClick}
               >
-                <i class="fa-solid fa-calendar"></i> CalendarVeiw
+                <i class="fa-solid fa-calendar"></i> Calendar Veiw
               </NavLink>
               <NavLink
                 exact="true"
