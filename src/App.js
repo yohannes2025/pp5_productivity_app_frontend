@@ -14,7 +14,6 @@ import EditTask from "./components/EditTask"; // Import the EditTask component
 import TaskList from "./components/TaskList"; // Import the TaskList component
 import HomePage from "./components/HomePage";
 import "react-datepicker/dist/react-datepicker.css";
-import CalendarVeiw from "./components/CalendarView";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/calendarView" element={<CalendarVeiw />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/createtask" element={<CreateTask />} />

@@ -47,14 +47,6 @@ function NavBar() {
               </NavLink>
               <NavLink
                 exact="true"
-                to="/CalendarView"
-                className={styles.NavLink}
-                onClick={handleNavClick}
-              >
-                <i class="fa-solid fa-calendar"></i> Calendar Veiw
-              </NavLink>
-              <NavLink
-                exact="true"
                 to="/profile"
                 className={styles.NavLink}
                 onClick={handleNavClick}
