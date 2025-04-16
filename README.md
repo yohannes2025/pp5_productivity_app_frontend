@@ -408,7 +408,7 @@ Wireframes were designed during the planning phase to define layout, content str
 ![profile_wireframe_pc](./src/assets/images/profile_page_wireframe_pc.png)
 ![profile_page_pc](./src/assets/images/profile_page_pc.png)
 - **Settings** – App and account settings
-![settings_wireframe_pc](./src/assets/images/settigns_page_ wireframe_pc.png)
+![settings_wireframe_pc](./src/assets/images/settings_page_wireframe_pc.png)
 ![settings_page_pc](./src/assets/images/settings_page_pc.png)
 - **Tasks (Dropdown Menu)**:
   - Create Task 
