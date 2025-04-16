@@ -402,26 +402,6 @@ Typography is responsive and consistent across components to maintain design uni
 Wireframes were designed during the planning phase to define layout, content structure, and user flow. They include:
 
 - **HomePage** – Main landing page
-<<<<<<< HEAD
-  ![home_wireframe_pc](../assets/images/home_wireframe_pc.png)
-  ![home_page_pc](../assets/images/home_page_pc.png)
-- **Profile** – User profile page
-  ![profile_wireframe_pc](../assets/images/profile_wireframe_pc.png)
-  ![profile_page_pc](../assets/images/profile_page_pc.png)
-- **Settings** – App and account settings
-  ![settigns_wireframe_pc](../assets/images/settings_page__wireframe_pc.png)
-  ![settings_page_pc](../assets/images/settings_page_pc.png)
-- **Tasks (Dropdown Menu)**:
-  - Create Task
-    ![create_task_wireframe_pc](../assets/images/create_task-page_wireframe_pc.png)
-    ![create_task_page_pc](../assets/images/create_task_page_pc.png)
-  - Edit Task
-    ![edit_task_wireframe_pc](../assets/images/edit_task_page_wireframe_pc.png)
-    ![edit_task_page_pc](../assets/images/edit_task_page_pc.png)
-  - Task List
-    ![task_list_wireframe_pc](../assets/images/task_list_page_wireframe_pc.png)
-    ![task_list_page_pc](../assets/images/task_list_page_pc.png)
-=======
 ![home_wireframe_pc](./src/assets/images/home_page_wireframe_pc.png)
 ![home_page_pc](./src/assets/images/home_page_pc.png)
 - **Profile** – User profile page
@@ -440,7 +420,7 @@ Wireframes were designed during the planning phase to define layout, content str
   - Task List
 ![task_list_wireframe_pc](./src/assets/images/task_list_page_wireframe_pc.png)
 ![task_list_page_pc](./src/assets/images/task_list_page_pc.png)
->>>>>>> c9c4a2e454cf31d28986c1f4773de01fb02ebabc
+
 
 Wireframes were created using Balsamiq and informed the React component structure and routing. All major interface elements were validated against the wireframes before implementation.
 
