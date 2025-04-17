@@ -6,7 +6,7 @@ import App from "./App"; // Your main App component
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Create a root element and render the app
-const root = ReactDOM.createRoot(document.getElementById("root")); // Use createRoot instead of render
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <App />

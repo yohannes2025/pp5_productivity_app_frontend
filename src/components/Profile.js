@@ -9,7 +9,6 @@ const Profile = () => {
     email: "",
     avatar: "",
   });
-  // State to hold user data for the table
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
@@ -45,7 +44,6 @@ const Profile = () => {
   return (
     <Container className="d-flex justify-content-center align-items-center vh-100">
       <Row>
-        {/* Adjusting to md={10} or lg={8} for more width */}
         <Col xs={12} md={10} lg={8}>
           <h1 className="text-center mb-4">Profile</h1>
           <Form onSubmit={handleProfileUpdate}>

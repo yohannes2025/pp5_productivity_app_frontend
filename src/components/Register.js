@@ -22,11 +22,14 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await api.post("/register", { name, email, password });
+      const response = await api.post("/register", { name, email, password });
       // Redirect the user to the login page after successful registration
       navigate("/login");
     } catch (err) {
-      setError(err.response.data.message);
+      // Check if the error response has a 'data' property
+      setError(
+        err.response?.data?.message || "An error occurred during registration."
+      );
     }
   };
 
