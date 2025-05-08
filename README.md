@@ -1,5 +1,7 @@
 # 📅 Productivity App Project
 
+![home_wireframe_pc](./src/assets/images/home_page_wireframe_pc.png)
+
 The **Productivity App** project focuses on developing a **calendar-driven application** designed to help users organize their time efficiently. This **browser-based platform** allows users to create and manage **tasks and habits** effectively.
 This application is built to ensure a **seamless user experience** in maintaining daily productivity through a clean, intuitive interface and smart task organization tools.
 
